@@ -9,16 +9,30 @@ body{
 }
 
 h1,h2,h3{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.huddle-wrapper{
+    background-image: url(./images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: 470px;
+    background-position-y: 5%;
+    background-repeat: no-repeat;
 }
 
 .huddle-section{
-    background-color: hsl(257, 40%, 49%);
+    background: none;
 }
 
-/* .huddle-wrapper{
-    padding:0 3.5rem;
-} */
+img.logo{
+    max-width:150px;
+    margin:3rem 2.9rem;
+}
+
+.hero-title{
+    font-weight: 600;
+}
+
 
 .hero-img{
     max-width:500px;
@@ -31,4 +45,19 @@ h1,h2,h3{
 
 .hero-info{
     max-width:400px;
+    margin:2rem 2.5rem;
+}
+
+@media(min-width:990px){
+    .huddle-wrapper{
+        background: none;
+    }
+
+    .huddle-section{
+        background-image:url(./images/bg-desktop.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-size: contain;
+        background-position-x:160px;
+        background-repeat: no-repeat;
+    }
 }
